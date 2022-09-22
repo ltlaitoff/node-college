@@ -1,0 +1,18 @@
+{
+	"name": "tg-node-bot",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"start": "nodemon index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"nodemon": "^2.0.20"
+	},
+	"dependencies": {
+		"telegraf": "^4.9.2"
+	}
+}
