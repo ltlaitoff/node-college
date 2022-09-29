@@ -12,4 +12,4 @@ const checkOnTrigger = message => {
 	return null
 }
 
-module.exports = { checkOnTrigger }
+module.exports = checkOnTrigger

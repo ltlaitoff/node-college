@@ -6,4 +6,4 @@ const getMessageTextByType = (type, { stats, increase }) => {
 	return `${emoji[type]}${translateOutput[type].ua}: ${stats[type]}(+${increase[type]})`
 }
 
-module.exports = { getMessageTextByType }
+module.exports = getMessageTextByType

@@ -2,8 +2,7 @@ require('dotenv').config()
 const { Telegraf } = require('telegraf')
 const { setStore, getStore } = require('./store')
 const { getApiData } = require('./api')
-const { getMessageTextByType } = require('./helpers/getMessageTextByType')
-const { checkOnTrigger } = require('./helpers/checkOnTrigger')
+const { getMessageTextByType, checkOnTrigger } = require('./helpers')
 
 const bot = new Telegraf(process.env.BOT_TOKEN)
 
