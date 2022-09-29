@@ -15,6 +15,14 @@ const APIKeys = {
 	ATGM_SRBM_SYSTEMS: 'atgm_srbm_systems'
 }
 
+const DEFAULT_COMMANDS = [
+	{ command: 'start', description: 'start' },
+	{
+		command: 'help',
+		description: 'help'
+	}
+]
+
 const emoji = {
 	[APIKeys.PERSONNEL_UNITS]: '🤭',
 	[APIKeys.TANKS]: '',
@@ -95,6 +103,7 @@ const translateOutput = {
 }
 
 module.exports = {
+	DEFAULT_COMMANDS,
 	APIKeys,
 	emoji,
 	triggers,

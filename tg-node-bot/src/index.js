@@ -3,6 +3,7 @@ const { Telegraf } = require('telegraf')
 const { setStore, getStore } = require('./store')
 const { getApiData } = require('./api')
 const { getMessageTextByType, checkOnTrigger } = require('./helpers')
+const { DEFAULT_COMMANDS } = require('./config')
 
 const bot = new Telegraf(process.env.BOT_TOKEN)
 
@@ -15,6 +16,8 @@ const mount = () => {
 			throw new Error('API error', err)
 		})
 }
+
+bot.telegram.setMyCommands(DEFAULT_COMMANDS)
 
 bot.start(ctx => ctx.reply('Hi'))
 bot.help(ctx => ctx.reply('Help is not working'))
